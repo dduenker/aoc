@@ -1,0 +1,10 @@
+@all: day01
+{
+	./day01
+}
+
+
+day01: day01.nim
+{
+	nim c day01.nim
+}
