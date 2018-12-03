@@ -1,10 +1,14 @@
-@all: day01 
+@all: day01 day02
 {
-	./day01
+	./day02
 }
 
 
-day01: day01.nim
+
+day$D.nim:
+{}
+
+day$D: day$D.nim
 {
-	nim c -d:release day01.nim
+	nim c -d:release day$D.nim
 }
